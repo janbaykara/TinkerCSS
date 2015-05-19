@@ -1,6 +1,6 @@
 {
     "name": "TinkerCSS",
-    "description": "Tinker with a site's styles via an inspector tools-based panel, that injects CSS in real time, and automatically stores your snippets.",
+    "description": "An inspector tools panel. Tinker with a site's CSS in real time, automatically remember your changes.",
     "manifest_version": 2,
     "version": "1.0.0",
 

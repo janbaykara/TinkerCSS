@@ -1,0 +1,20 @@
+/*
+    A real-time CSS editor, for Chrome's code inspector.
+*/
+
+* {
+    position: relative;
+}
+
+#big-bang:before {
+    content: '';
+}
+
+#the-wife {
+    right: 100%;
+    margin: 0;
+}
+
+.defibrillators {
+    clear: both;
+}
