@@ -1,0 +1,32 @@
+{
+    "name": "TinkerCSS",
+    "description": "Tinker with a site's styles via an inspector tools-based panel, that injects CSS in real time, and automatically stores your snippets.",
+    "manifest_version": 2,
+    "version": "1.0.0",
+
+    "icons": {
+        "128": "img/icon128.png"
+    },
+
+    "permissions": [
+        "storage",
+        "tabs",
+        "<all_urls>"
+    ],
+
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": [
+            "deps/jquery.2.1.4.js",
+            "lib/content.js"
+        ]
+    }],
+
+    "background": {
+        "scripts": [
+            "lib/background.js"
+        ]
+    },
+
+    "devtools_page": "lib/devtools/devtools.html"
+}
