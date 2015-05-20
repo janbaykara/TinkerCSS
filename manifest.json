@@ -2,7 +2,7 @@
     "name": "TinkerCSS",
     "description": "An inspector tools panel. Tinker with a site's CSS in real time, automatically remember your changes.",
     "manifest_version": 2,
-    "version": "1.0.0",
+    "version": "1.2.0",
 
     "icons": {
         "128": "img/icon128.png"
@@ -17,7 +17,7 @@
     "content_scripts": [{
         "matches": ["<all_urls>"],
         "js": [
-            "deps/jquery.2.1.4.js",
+            "deps/jquery.js",
             "lib/content.js"
         ]
     }],

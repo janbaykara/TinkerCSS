@@ -2,15 +2,27 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="/deps/font-awesome/css/font-awesome.min.css">
     <link rel='stylesheet' href="sidebar.css" />
 </head>
 
 <body>
-    <div class='headerbar'>Live CSS Editor</div>
+    <table cellspacing="0" cellpadding="0" class='header-box'>
+        <tr>
+            <td class='header-box__icon' width="30%" align=left>
+                <span data-ui='toggle'><span class='fa fa-toggle-on'></span> Toggle on/off</span>
+            </td>
+            <td class='header-box__icon' width="40%" align=center>
+                <h1>TinkerCSS</h1>
+            </td>
+            <td class='header-box__icon' width="30%" align=right>
+                <span data-ui='sync'>Cloud sync <span class='fa fa-cloud'></span></span>
+            </td>
+        </tr>
+    </table>
+    <div id="editor"></div>
 
-<div id="editor"></div>
-
-    <script src="/deps/jquery.2.1.4.js"></script>
+    <script src="/deps/jquery.js"></script>
     <script src="/deps/ace/ace.js" type="text/javascript" charset="utf-8"></script>
     <script src="/deps/ace/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
     <script src="/deps/Session.js"></script>
