@@ -29,7 +29,7 @@ var Session = function(sessionProperties) {
         chrome.storage.sync.set(
             keyValue,
             function sentToStorage() {
-                console.log("SET Session."+property+" = "+value)
+                console.log("SET Session."+property+" = "+keyValue.property)
                 if(typeof Session.callbacks[property] === 'function') Session.callbacks[property]("set",value,oldVal)
                 if(typeof cb === 'function') cb(value)
             }
